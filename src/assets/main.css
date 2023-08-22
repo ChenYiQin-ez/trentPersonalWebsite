@@ -1,0 +1,65 @@
+@import './base.css';
+
+#app {
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+.dynamic-headline {
+  font-weight: 200;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+@media only screen and (min-width: 1170px) {
+  .dynamic-headline {
+    font-size: 6rem;
+  }
+}
+.static {
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+.fb {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: 0.4s;
+}
+
+.fb:hover {
+  color: #003185;
+  transition: color 0.3s ease;
+}
+
+.linked {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: 0.4s;
+}
+
+.linked:hover {
+  color: #2467db;
+  transition: color 0.3s ease;
+}
+
+.insta {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: 0.4s;
+}
+
+.insta:hover {
+  color: #7204f8;
+  transition: color 0.3s ease;
+}
+
+
+
+
