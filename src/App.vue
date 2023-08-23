@@ -307,6 +307,7 @@ export default {
     box-shadow: none;
     padding-right: 15px;
     padding-left: 15px;
+    padding-top: 15px;
   }
   .items {
     margin-left: 60%;
@@ -369,6 +370,7 @@ export default {
   }
   .nav-content.menu-open h3 {
     padding-top: 6px;
+
   }
   .nav-content.menu-open .items {
     mmargin-left: 60%;
@@ -477,10 +479,16 @@ export default {
 
 .navbar-fixed h3 {
   color: #1c1c1c;
+  font-family: 'Yellowtail', cursive;
+  padding-top: 4px;
 }
 
 .navbar-fixed.page-nav a {
   color: #1c1c1c;
+}
+
+.navbar-fixed .nav-content {
+  padding: 0 15px 0 15px;
 }
 
 .navbar-fixed.page-nav a::before {
@@ -497,13 +505,13 @@ export default {
 
 h3 {
   float: left;
-  padding-top: 5px;
+
   padding-left: 5px;
-  font-size: 27px;
+  font-size: 45px;
   font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: #fff;
+  font-family: 'Yellowtail', cursive;
 }
 
 .nav-container {
