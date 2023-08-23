@@ -37,9 +37,9 @@ export default {
               <div class="skills">
 
               </div>
-
+              <el-button class="contact-but" @click="moveToContact">Contact Me</el-button>
             </div>
-            <el-button @click="moveToContact">Contact Me</el-button>
+
           </el-col>
         </el-row>
       </div>
@@ -82,15 +82,43 @@ h3 {
 p {
   padding-top: 20px;
   line-height: 1.6;
-  margin: 0;
+  margin-bottom: 20px;
   font-size: 15px;
   color: #748182;
 }
 
-.img-container {
-  position: relative;
-  padding-right: 30px;
-  border-right: 1px solid #cecece;
+
+
+@media (min-width: 1024px) {
+  .img-container {
+    position: relative;
+    padding-right: 30px;
+    border-right: 1px solid #cecece;
+  }
+}
+
+@media (max-width: 820px) {
+  .img-container {
+    position: relative;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #cecece;
+  }
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+  }
+
+  .sub-title {
+    text-align: center;
+  }
+  p {
+    padding: 10px 5px 0 10px;
+    text-align: center;
+  }
+
 }
 
 

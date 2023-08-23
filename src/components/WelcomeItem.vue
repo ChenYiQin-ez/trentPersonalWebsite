@@ -25,9 +25,47 @@
 <style scoped>
 
 .item-center {
-  margin-left: 35%;
-  max-height: 120%; /* Use the full viewport height */
+  margin-left: 20%;
+  background: #e3e2e2;
+  -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  max-width: 60%;
+  margin-bottom: 30px;
+  max-height: 5%;
 }
+
+
+@media (min-width: 1024px) {
+  .item-center {
+    margin-left: 25%;
+    max-height: 5%; /* Use the full viewport height */
+  }
+  .item {
+    display: flex;
+    position: relative;
+  }
+}
+
+@media (max-width: 900px) {
+  .item-center {
+    margin-left: 10%;
+    padding: 0 10px 0 10px;
+    max-width: 80%;
+  }
+  .item {
+    margin-top: 0;
+    padding-top: 2rem;
+    display: flex;
+    position: relative;
+  }
+
+  i {
+    border-right: 1px solid #cecece;
+    padding-right: 5px;
+  }
+}
+
 
 .sub-text {
   font-size: 13px;
@@ -37,11 +75,6 @@
   margin-bottom: 0.5rem;
 }
 
-.item {
-  margin-top: 2rem;
-  display: flex;
-  position: relative;
-}
 
 .details {
   flex: 1;
@@ -53,8 +86,6 @@ i {
   place-items: center;
   place-content: center;
   width: 32px;
-  height: 32px;
-
   color: var(--color-text);
 }
 
@@ -68,7 +99,7 @@ h3 {
 @media (min-width: 1024px) {
   .item {
     margin-top: 0;
-    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
+    padding: 2rem 0 1rem calc(var(--section-gap) / 2);
   }
 
   i {

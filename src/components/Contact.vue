@@ -31,9 +31,10 @@ export default {
           Contacts
         </h3>
       </div>
+
       <div class="contacts-content">
-        <el-row class="row-bg" justify="space-evenly" align="flex">
-          <el-col :span="6">
+        <el-row class="row-bg" justify="space-evenly" align="flex" :gutter="20">
+          <el-col class="col-bg" :span="6">
             <div class="grid-content ep-bg-purple">
               <span class="icon" style="padding-right: 3px">
                 <font-awesome-icon class="addr" icon="fa-solid fa-share-nodes"/>
@@ -77,7 +78,7 @@ export default {
             </div>
           </el-col>
 
-          <el-col :span="6">
+          <el-col class="col-bg" :span="6">
             <div class="grid-content ep-bg-purple">
               <span class="icon">
                 <font-awesome-icon class="addr" icon="fa-solid fa-location-dot"/>
@@ -91,7 +92,7 @@ export default {
             </div>
           </el-col>
 
-          <el-col :span="6">
+          <el-col class="col-bg" :span="6">
             <div class="grid-content ep-bg-purple">
               <span class="icon">
                 <font-awesome-icon class="addr" icon="fa-solid fa-envelope"/>
@@ -107,7 +108,7 @@ export default {
             </div>
           </el-col>
 
-          <el-col :span="6">
+          <el-col class="col-bg" :span="6">
             <div class="grid-content ep-bg-purple">
               <span class="icon">
                 <font-awesome-icon class="addr" icon="fa-solid fa-phone"/>
@@ -149,8 +150,6 @@ export default {
 
 .contacts {
   padding: 100px 0;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .contacts-header {
@@ -193,10 +192,24 @@ p {
   text-align: center;
 }
 
+@media (max-width: 900px) {
+  .row-bg {
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+  }
+
+  .col-bg {
+    max-width: 90%;
+  }
+}
+
 .grid-content {
-  border-radius: 4px;
-  min-height: 36px;
+  padding: 50px 20px;
+  background: #e3e2e2;
+  -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
+  border-radius: 5px;
 }
 
 span {
@@ -243,5 +256,7 @@ span {
 li {
   padding-bottom: 4px;
 }
+
+
 
 </style>

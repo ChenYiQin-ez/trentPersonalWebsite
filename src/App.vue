@@ -17,7 +17,10 @@ export default {
       isOffline: false,
       move: false,
       typedWord: '',
-      wordList: [' Yiqin Chen', ' A Developer', ' A Guitarist']
+      wordList: [' Yiqin Chen', ' A Developer', ' A Guitarist'],
+      image1: '',
+      image2: '',
+      image3: ''
     }
   },
   created() {
@@ -25,6 +28,7 @@ export default {
       // Display an offline notification here
       this.showOfflineNotification();
     });
+    this.image1 = 'src/assets/images/bg-2.jpg'
   },
   mounted() {
 
@@ -178,13 +182,13 @@ export default {
     <section class="header-back">
       <el-carousel height="100vh" autoplay indicator-position="none" interval="4200">
         <el-carousel-item>
-          <div class="carousel-background-1" style="background-image: url('src/assets/images/bg-2.jpg');"></div>
+          <div class="carousel-background-1" ></div>
         </el-carousel-item>
         <el-carousel-item>
-          <div class="carousel-background" style="background-image: url('src/assets/images/bg-1.jpg');"></div>
+          <div class="carousel-background" ></div>
         </el-carousel-item>
         <el-carousel-item>
-          <div class="carousel-background-2" style="background-image: url('src/assets/images/bg-3.jpg');"></div>
+          <div class="carousel-background-2" ></div>
         </el-carousel-item>
       </el-carousel>
       <div class="bottom-styling">
@@ -418,6 +422,7 @@ export default {
   position: relative;
   overflow: hidden;
   background-position: 0px 0px;
+  background-image: url('../src/assets/images/bg-1.jpg')
 }
 
 .carousel-background-1 {
@@ -426,6 +431,7 @@ export default {
   background-size: contain;
   position: relative;
   overflow: hidden;
+  background-image: url('../src/assets/images/bg-2.jpg')
 }
 
 .carousel-background-2 {
@@ -434,6 +440,7 @@ export default {
   position: relative;
   overflow: hidden;
   background-position: 0px 0px;
+  background-image: url('../src/assets/images/bg-3.jpg')
 }
 
 .page-nav {
